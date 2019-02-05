@@ -1,27 +1,17 @@
-# PlatformUiCodeTest
+Instructions:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+- Construct a single page doctor locator with a UI similar to:
 
-## Development server
+https://docs.google.com/drawings/d/162BUEWsUw-rpaWe2eVRe9cdcCBJEb6LtQvu-4wfc0oQ/edit?usp=sharing .
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- summary.json should be used in place of what an API would return.
 
-## Code scaffolding
+Requirements:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- The UI layout should follow the mock.
 
-## Build
+- When a doctor is selected, something should change on the map (ex: zoom to doctor's pin, highlight pin).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- The final product should be a public github repo.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+We're looking for clean, well-tested code. Tests should cover functionality rather than methods.
