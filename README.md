@@ -1,27 +1,25 @@
-# PlatformUiCodeTest
+# Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.1.
+Here is the business story:
 
-## Development server
+As a consumer, I want to see a list of providers each contained by a card. These providers can be pinned to a "saved list" to be easily referenced.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Acceptance Criteria:
 
-## Code scaffolding
+- Unselected providers can be clicked and sent to a selected list.
+- Selected providers can be removed by clicking an X on the provider's card.
+- When providers are removed from the selected list, they should go back to the unselected list.
+- The state of the lists should be retained when the app is reloaded.
+- Unit tests should be added to cover the functionality.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Installation
 
-## Build
+- `npm install`
+- `ng serve`
+- Load the app at http://localhost:4200 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Testing
 
-## Running unit tests
+To test your work, run:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `ng test`
