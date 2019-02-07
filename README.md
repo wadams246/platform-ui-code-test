@@ -10,7 +10,7 @@ Acceptance Criteria:
 - Selected providers can be removed by clicking an X on the provider's card.
 - When providers are removed from the selected list, they should go back to the unselected list.
 - The state of the lists should be retained when the app is reloaded.
-- Unit tests should be added to cover the functionality.
+- Unit tests should be added to cover new functionality.
 
 # Installation
 
