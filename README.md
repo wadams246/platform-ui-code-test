@@ -11,6 +11,7 @@ Acceptance Criteria:
 - When providers are removed from the selected list, they should go back to the unselected list.
 - The state of the lists should be retained when the app is reloaded.
 - Unit tests should be added to cover new functionality.
+- The finished code should be pushed to a public github repository
 
 # Installation
 
