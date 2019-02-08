@@ -1,6 +1,6 @@
 # Description
 
-Here is the business story:
+Hi, and welcome to the team! As you know, we provide tools for searching for doctors and hospitals (i.e. "providers"). A new feature has been requested by the client. Here is the business story:
 
 As a consumer, I want to see a list of providers each contained by a card. These providers can be pinned to a "saved list" to be easily referenced.
 
@@ -11,7 +11,6 @@ Acceptance Criteria:
 - When providers are removed from the selected list, they should go back to the unselected list.
 - The state of the lists should be retained when the app is reloaded.
 - Unit tests should be added to cover new functionality.
-- The finished code should be pushed to a public github repository
 
 # Installation
 
@@ -24,3 +23,7 @@ Acceptance Criteria:
 To test your work, run:
 
 - `ng test`
+
+# Finishing up
+
+- The finished code should be pushed to a public github repository
