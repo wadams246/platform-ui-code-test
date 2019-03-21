@@ -26,4 +26,4 @@ To test your work, run:
 
 # Finishing up
 
-- The finished code should be pushed to a public github repository
+- Please fork the repo and push your completed code to a public github repository.
