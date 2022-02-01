@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Provider } from '../types/types';
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -31,6 +33,36 @@ export class ListComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.checkSession();
+  }
 
+  selectProvider(provider: Provider) {
+    const index = this.unselectedProviders.indexOf(provider);
+
+    this.unselectedProviders.splice(index, 1);
+    this.selectedProviders.push(provider);
+    this.updateSession();
+  }
+
+  unselectProvider(provider: Provider) {
+    const index = this.selectedProviders.indexOf(provider);
+
+    this.selectedProviders.splice(index, 1);
+    this.unselectedProviders.push(provider);
+    this.updateSession();
+  }
+
+  private checkSession() {
+    const sessionSelected = JSON.parse(sessionStorage.getItem('selectedProviders'));
+    const sessionUnselected = JSON.parse(sessionStorage.getItem('unselectedProviders'));
+    
+    this.selectedProviders = sessionSelected || this.selectedProviders;
+    this.unselectedProviders = sessionUnselected || this.unselectedProviders;
+  }
+
+  private updateSession() {
+    sessionStorage.setItem('selectedProviders', JSON.stringify(this.selectedProviders));
+    sessionStorage.setItem('unselectedProviders', JSON.stringify(this.unselectedProviders));
+  }
 }

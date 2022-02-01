@@ -1,0 +1,38 @@
+.provider-card {
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow .2s linear;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.provider-card.selectable:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.provider-card .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.provider-card .heading span {
+  position: relative;
+}
+
+.provider-card .heading span i {
+  color: red;
+  font-weight: 700;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.provider-card .heading h3 {
+  margin: 0 0 10px 0;
+}
+
+.provider-card .body {
+  display: flex;
+  flex-flow: column;
+}

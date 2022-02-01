@@ -1,0 +1,19 @@
+<div class="provider-card" [ngClass]="{ 'selectable': selectable }" (click)="selectProvider(provider)">
+  <div class="heading">
+    <h3>{{ provider.name }}</h3>
+    <span>
+      <i class="close icon" *ngIf="!selectable" (click)="unselectProvider(provider)"></i>
+    </span>
+  </div>
+
+  <div class="body">
+    <div>
+      <strong>Address: </strong>
+      <span title="Address">{{ provider.address }}</span>
+    </div>
+    <div>
+      <strong>Phone: </strong>
+      <span title="Phone">{{ provider.phone | phone }}</span>
+    </div>
+  </div>
+</div>

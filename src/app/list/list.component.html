@@ -1,4 +1,33 @@
 <div class="list-container">
   <h2>Providers</h2>
 
+  <div class="providers-container">
+
+    <div>
+      <h3>Unselected Providers</h3>
+      <ul>
+        <li *ngFor="let provider of unselectedProviders">
+          <app-provider-card 
+            [provider]="provider"
+            (onSelect)="selectProvider(provider)"
+            (onUnselect)="unselectProvider(provider)"
+          ></app-provider-card>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Selected Providers</h3>
+      <ul>
+        <li *ngFor="let provider of selectedProviders">
+          <app-provider-card 
+            [provider]="provider"
+            [selectable]="false"
+            (onSelect)="selectProvider(provider)"
+            (onUnselect)="unselectProvider(provider)"
+          ></app-provider-card>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

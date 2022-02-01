@@ -1,3 +1,4 @@
+
 .list-container {
   padding: 0px 24px;
   height: 100vh;
@@ -7,4 +8,40 @@
 
 h2 {
   border-bottom: 1px solid lightgray;
+}
+
+.providers-container {
+  display: flex;
+}
+
+.providers-container > div {
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .providers-container {
+    flex-flow: column-reverse;
+  }
+  .providers-container div {
+    width: unset;
+  }
 }
